@@ -1,0 +1,22 @@
+.post_card {
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    margin: 20px;
+}
+
+ 
+.post_card > img {
+    width: 70%;
+    
+}
+
+.post_card > div {
+    
+    padding: 5px;
+    cursor: pointer;
+    border: 2px solid green;
+    border-radius: 10px;
+}

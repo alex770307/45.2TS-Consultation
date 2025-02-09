@@ -1,0 +1,33 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.userList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.userListItem {
+  border: solid black 2px;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.userDetail {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.address {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
