@@ -21,7 +21,8 @@
 .title, .price{
     font-weight: bold;
     color: black;
-}
+    
+    }
 .image{
     width: 300px;
 }

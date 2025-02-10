@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import './ChuckNorris.css'
+import styles from './ChuckNorris.module.css'
 
 
 
@@ -21,17 +21,23 @@ export default function ChuckNorris(): JSX.Element {
     }, []);
 
     return (
-        <div className="quote-container">
-            {quote ? (
-                <>
-                    <img src={quote.icon_url} alt="Chuck Norris Icon" className="quote-icon" />
-                    <p className="quote-text">{quote.value}</p>
-                    <button className="refresh-button" onClick={ fetchQuote}>Обновить цитату</button>
-                </>
-            ) : (
-                <p>Загрузка...</p>
-            )}
-        </div>
+      <div className={styles.container}>
+        {quote ? (
+          <>
+            <img
+              src={quote.icon_url}
+              className={styles.icon}
+              alt="Chuck Norris Icon"
+            />
+            <p className={styles.text}>{quote.value}</p>
+            <button className={styles.button} onClick={fetchQuote}>
+              Обновить цитату
+            </button>
+          </>
+        ) : (
+          <p>Загрузка...</p>
+        )}
+      </div>
     );
 };
 

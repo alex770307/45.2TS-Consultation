@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f8ff; /* Светлый фон */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.imageContainer {
+    margin-bottom: 20px;
+    border: 2px solid #ccc; /* Рамка вокруг изображения */
+    border-radius: 10px;
+    overflow: hidden; /* Обрезаем изображение по рамке */
+}
+
+.image {
+    width: 100%; /* Изображение занимает всю ширину контейнера */
+    height: auto; /* Высота автоматически подстраивается */
+    display: block; /* Убираем пробелы под изображением */
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff; /* Цвет кнопки */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
