@@ -61,6 +61,11 @@ export default function NavBar(): JSX.Element {
                         ChuckNorris
                     </NavLink>
                 </li>
+                <li className={style.listelement}>
+                    <NavLink to="/iplocation" className={style.link}>
+                    IpLocation
+                    </NavLink>
+                </li>
             </ul>
         </nav>
 

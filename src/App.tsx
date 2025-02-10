@@ -13,6 +13,7 @@ import Products from './components/Products/Products'
 import RandomDog from './components/RandomDog/RandomDog'
 import PostContainer from './components/PostContainer'
 import ChuckNorris from './components/ChuckNorris/ChuckNorris'
+import IpLocation from './components/IpLocation/IpLocation'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="sandwich" element={<Sandwich />} />
           <Route path="userspage" element={<UsersPage />} />
           <Route path="chucknorris" element={<ChuckNorris />} />
+          <Route path="iplocation" element={<IpLocation />} />
 
         </Route>
       </Routes>
