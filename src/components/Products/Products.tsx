@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
-
+import type Product from "./types/Product";
 import style from "./Products.module.css";
+import { Link } from "react-router-dom";
 
- interface Product{
-    id:number;
-    title:string;
-    price:number;
-    category:string;
-    description:string;
-    image:string;
-    }
+//  interface Product{
+//     id:number;
+//     title:string;
+//     price:number;
+//     category:string;
+//     description:string;
+//     image:string;
+//     }
 
 export default function Products(): JSX.Element {
   const [products, setProducts] = useState<Product[]>([]);
@@ -29,7 +30,7 @@ export default function Products(): JSX.Element {
             <p className={style.title}>{product.title}</p>
             <img className={style.image} src={product.image} alt="" />
             <p className={style.price}>{`${product.price} $`}</p>
-            
+            <Link className={style.link} to={`${product.id}`}>Посмотреть товар</Link>
           </li>
         ))}
       </ul>

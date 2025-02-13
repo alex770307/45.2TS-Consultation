@@ -14,6 +14,7 @@ import RandomDog from './components/RandomDog/RandomDog'
 import PostContainer from './components/PostContainer'
 import ChuckNorris from './components/ChuckNorris/ChuckNorris'
 import IpLocation from './components/IpLocation/IpLocation'
+import ProductPage from './components/ProductPage/ProductPage'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="userspage" element={<UsersPage />} />
           <Route path="chucknorris" element={<ChuckNorris />} />
           <Route path="iplocation" element={<IpLocation />} />
+          <Route path="products/:productId" element={<ProductPage />} />
         </Route>
       </Routes>
     </>
