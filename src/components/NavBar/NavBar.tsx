@@ -67,6 +67,11 @@ export default function NavBar(): JSX.Element {
             IpLocation
           </NavLink>
         </li>
+        <li className={style.listelement}>
+          <NavLink to="/datafetcher" className={style.link}>
+          DataFetcher
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

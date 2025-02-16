@@ -15,6 +15,7 @@ import PostContainer from './components/PostContainer'
 import ChuckNorris from './components/ChuckNorris/ChuckNorris'
 import IpLocation from './components/IpLocation/IpLocation'
 import ProductPage from './components/ProductPage/ProductPage'
+import DataFetcher from './components/DataFetcher/DataFetcher'
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="chucknorris" element={<ChuckNorris />} />
           <Route path="iplocation" element={<IpLocation />} />
           <Route path="products/:productId" element={<ProductPage />} />
+          <Route path="datafetcher" element={<DataFetcher />} />
         </Route>
       </Routes>
     </>
