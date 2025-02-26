@@ -72,6 +72,11 @@ export default function NavBar(): JSX.Element {
           DataFetcher
           </NavLink>
         </li>
+        <li className={style.listelement}>
+          <NavLink to="/todoapp" className={style.link}>
+         TodoApp
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

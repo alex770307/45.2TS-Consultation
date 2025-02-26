@@ -1,0 +1,53 @@
+.container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .inputContainer {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .addButton {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .addButton:hover {
+    background: #0056b3;
+  }
+  
+  .taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+   
+  }
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  

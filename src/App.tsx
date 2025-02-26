@@ -16,12 +16,14 @@ import ChuckNorris from './components/ChuckNorris/ChuckNorris'
 import IpLocation from './components/IpLocation/IpLocation'
 import ProductPage from './components/ProductPage/ProductPage'
 import DataFetcher from './components/DataFetcher/DataFetcher'
+import TodoApp from './components/TodoApp/TodoApp'
+import { ThemeProvider } from './themeContext/ThemeProvider'
 
 function App() {
 
 
   return (
-    <>
+    <ThemeProvider>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="coctail" element={<Coctail />} />
@@ -38,9 +40,10 @@ function App() {
           <Route path="iplocation" element={<IpLocation />} />
           <Route path="products/:productId" element={<ProductPage />} />
           <Route path="datafetcher" element={<DataFetcher />} />
+          <Route path="todoapp" element={<TodoApp />} />
         </Route>
       </Routes>
-    </>
+    </ThemeProvider>
   );
 
 }
