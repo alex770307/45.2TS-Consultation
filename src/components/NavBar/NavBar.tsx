@@ -77,6 +77,11 @@ export default function NavBar(): JSX.Element {
          TodoApp
           </NavLink>
         </li>
+        <li className={style.listelement}>
+          <NavLink to="/appform" className={style.link}>
+         App form
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

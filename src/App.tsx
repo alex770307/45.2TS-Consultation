@@ -18,6 +18,7 @@ import ProductPage from './components/ProductPage/ProductPage'
 import DataFetcher from './components/DataFetcher/DataFetcher'
 import TodoApp from './components/TodoApp/TodoApp'
 import { ThemeProvider } from './themeContext/ThemeProvider'
+import App_form from './components/App_form/App_form'
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="products/:productId" element={<ProductPage />} />
           <Route path="datafetcher" element={<DataFetcher />} />
           <Route path="todoapp" element={<TodoApp />} />
+          <Route path="appform" element={<App_form />} />
         </Route>
       </Routes>
     </ThemeProvider>
